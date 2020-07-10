@@ -24,8 +24,11 @@ public class CoinController {
         coinrepos.findAll().iterator().forEachRemaining(myList::add);
 
         myList.sort((c1,c2)-> c1.getName().compareToIgnoreCase(c2.getName()));
-        for( int i =0; i < myList.size(); i++){
-            System.out.println( i+1 + myList(i));
+        System.out.println(myList);
+        for( Coin item: myList){
+            System.out.format("", item);
+
+
         }
         return new ResponseEntity<>(myList, HttpStatus.OK);
 
