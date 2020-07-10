@@ -24,12 +24,15 @@ public class CoinController {
         coinrepos.findAll().iterator().forEachRemaining(myList::add);
 
         myList.sort((c1,c2)-> c1.getName().compareToIgnoreCase(c2.getName()));
-        System.out.println(myList);
+        double total = 0;
         for( Coin item: myList){
-            System.out.format("", item);
 
+            System.out.println( item.getQuantity() +" " + item.getNamepural());
+            total += item.getValue()*item.getQuantity();
 
         }
+
+        System.out.println( "The piggy bank holds" + " " + total);
         return new ResponseEntity<>(myList, HttpStatus.OK);
 
     }
