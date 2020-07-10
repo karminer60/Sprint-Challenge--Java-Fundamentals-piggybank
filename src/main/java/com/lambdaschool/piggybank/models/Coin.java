@@ -1,5 +1,5 @@
 package com.lambdaschool.piggybank.models;
-
+import java.util.*;
 import javax.persistence.*;
 
 @Entity
@@ -8,13 +8,13 @@ public class Coin {
 
     @Id
     @GeneratedValue(strategy  = GenerationType.AUTO)
-    long coinid;
-    string name;
-    string namepural;
+    Long coinid;
+    String name;
+    String namepural;
     double value;
     int quantity;
 
-    public Coin(string name, string namepural, double value, int quantity) {
+    public Coin(String name, String namepural, double value, int quantity) {
         this.name = name;
         this.namepural = namepural;
         this.value = value;
@@ -33,19 +33,19 @@ public class Coin {
         this.coinid = coinid;
     }
 
-    public string getName() {
+    public String getName() {
         return name;
     }
 
-    public void setName(string name) {
+    public void setName(String name) {
         this.name = name;
     }
 
-    public string getNamepural() {
+    public String getNamepural() {
         return namepural;
     }
 
-    public void setNamepural(string namepural) {
+    public void setNamepural(String namepural) {
         this.namepural = namepural;
     }
 
