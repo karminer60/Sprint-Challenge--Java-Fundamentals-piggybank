@@ -23,9 +23,22 @@ Commit your code regularly and meaningfully. This helps both you (in case you ev
 Be prepared to demonstrate your understanding of this week's concepts by answering questions on the following topics. You might prepare by writing down your own answers before hand.
 
 1. Explain how you took advantage of Java's Object Oriented approach to solve the sprint challenge.
+
+I took advantage of Java's oriented approach by understanding exactly what I was doing. It allowed to me to understand the structure.
+
 2. Explain the three steps needed to run a Java application (using the JDK) including what each step does and how those step correlate to running a JavaScript application.
+
+Compile- it 
+Put in one file- jar file
+Execute- actually render and run the code now that it is compiled and converted into a jar file
+
 3. Explain how Java being a strongly typed language affected you solution.
+
+It meant that there was a lot more work put into making sure types were included in all parts of the Application and it made it easier to understand what was happening
+
 4. Can you explain the differences between Abstract Classes and Interfaces including how they are used in your application?
+
+Abstract classes pass down information to the child and interfaces connect the database to the java classes and code. My interface was the controller.
 
 ## Instructions
 
